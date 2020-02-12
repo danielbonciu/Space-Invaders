@@ -11,8 +11,8 @@ SHIP_MOVE_SPEED_X = 10
 
 BULLET_MOVE_SPEED_Y = -15
 
-WIDTH = 800
-HEIGHT = 800
+WIDTH = 600
+HEIGHT = 600
 
 
 
@@ -46,6 +46,7 @@ class Enemy(GameObject):
         self.position[0] += int(self.velocity[0])
         self.position[1] += int(self.velocity[1])
 
+        # Do not write bellow here
         self.rect.centerx = self.position[0]
         self.rect.centery = self.position[1]
 
